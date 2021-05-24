@@ -1,0 +1,64 @@
+*, *::before, *::after
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+body
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  min-height: 100vh
+  background-image: url("/img/end-bg2.jpg")
+  background-size: cover
+  background-repeat: no-repeat
+  font-family: 'Henny Penny', cursive
+  font-size: 10px
+  color: rgb(204, 201, 179)
+
+.hero-shadow
+  position: absolute
+  top: 0
+  height: 100%
+  width: 100%
+  background-color: rgba(0, 0, 0, .8)
+  z-index: -2
+
+.container
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 85%
+  h1
+    padding-bottom: 5%
+    font-size: 2.6rem
+    color: black
+    letter-spacing: 1px
+    text-transform: uppercase
+    text-shadow: 3px 3px 5px black
+    color: rgb(73, 15, 15)
+  ul
+   li
+    list-style-type: none
+    font-size: 1.5rem
+    padding-bottom: 2%
+
+button
+  width: 160px
+  padding: 14px 5px
+  margin-top: 20%
+  border-radius: 5px
+  box-shadow: 0 0 10px 8px black
+  border: none
+  background-color: transparent
+  color: #f4a240
+  font-family: 'Henny Penny', cursive
+  font-size: 0.9rem
+  letter-spacing: 1px
+  text-transform: uppercase
+  text-shadow: 3px 3px 3px black
+  cursor: pointer
+  transition: all .3s
+  &:hover
+    transform: scale(1.2)
+    color: #f0c652

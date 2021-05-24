@@ -1,0 +1,120 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  min-height: 100vh;
+  background-image: url("/img/end-bg2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Henny Penny', cursive;
+  font-size: 10px;
+}
+
+.hero-shadow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: -2;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 85%;
+}
+
+.container h1 {
+  padding-bottom: 5%;
+  font-size: 2.2rem;
+  color: #ccc9b3;
+  letter-spacing: 1px;
+}
+
+.container h2 {
+  font-size: 2.2rem;
+  padding-bottom: 5%;
+  text-shadow: 2px 2px 5px #300707;
+  letter-spacing: 3px;
+  color: #551010;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form h3 {
+  text-align: center;
+  padding-bottom: 5%;
+  font-size: 1.6rem;
+  text-shadow: 5px 5px 5px black;
+  color: #ccc9b3;
+  letter-spacing: 1px;
+}
+
+form #username {
+  width: 55%;
+  padding: 13px 4px;
+  border-radius: 5px;
+  margin-bottom: 10%;
+  border: 2px solid black;
+  opacity: 0.5;
+}
+
+button {
+  width: 210px;
+  padding: 14px 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 10px 8px black;
+          box-shadow: 0 0 10px 8px black;
+  border: none;
+  background-color: transparent;
+  color: #f4a240;
+  font-family: 'Henny Penny', cursive;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 3px black;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+button:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #f0c652;
+}
+/*# sourceMappingURL=end.css.map */

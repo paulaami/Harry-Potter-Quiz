@@ -1,0 +1,202 @@
+*, *::before, *::after
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+body
+  display: flex
+  justify-content: center
+  align-items: center
+  min-height: 100vh
+  background-image: url("/img/main-bg.jpg")
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+  font-family: 'Kiwi Maru', sans-serif
+
+.fade-in
+  animation: fadeIn
+  animation-duration: 4s
+
+.hero-shadow
+  background-color: rgba(0, 0, 0, 0.8)
+
+.shadow
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  height: 100%
+  width: 100%
+  z-index: -2
+
+.answer-box1, .answer-box2, .answer-box3, .answer-box4
+  display: none
+  flex-direction: column
+  margin-bottom: 5%
+  color: rgb(204, 201, 179)
+  text-shadow: 1px 1px 1px #000
+  h3
+    margin-bottom: 2%
+    font-size: 1.2rem
+
+.show
+  display: flex
+
+.radio
+  display: inline-flex
+  align-items: center
+  margin: 0 2% 2% 0
+  cursor: pointer
+
+.radio_input
+  display: none
+
+.radio_radio
+  width: 1.25em
+  height: 1.25em
+  margin-right: 10px
+  padding: 3px
+  border: 2px solid #f4a240
+  border-radius: 50%
+
+  &::after
+    display: block
+    content: ""
+    width: 100%
+    height: 100%
+    border-radius: 50%
+    background-color: rgb(73, 15, 15)
+    transform: scale(0)
+    transition: transform .3s
+
+.radio_input:checked + .radio_radio::after
+  transform: scale(1)
+
+.check-score
+  display: none
+  position: relative
+  margin: 0 auto
+  padding: 14px 12px
+  border-radius: 10px
+  border: none
+  background-image: linear-gradient(300deg, #30080c 0%, #460811 74%)
+  color: #f4a240
+  text-transform: uppercase
+  box-shadow: 0 0 5px black
+  font-size: 1rem
+  font-family: 'Lexend', sans-serif
+  cursor: pointer
+  overflow: hidden
+  transition: color .3s
+  &:hover
+    color: #f0c652
+
+.check-score::before, .check-score::after
+  content: ""
+  position: absolute
+  top: 0
+  left: -150%
+  width: 150%
+  height: 100%
+  opacity: .1
+  background-color: #fff
+  transform: rotate(45deg)
+  transition: all ease .8s
+
+.check-score:hover::before
+  left: 100%
+
+.arrow-next
+  position: absolute
+  bottom: 5%
+  right: 10%
+  padding: 8px
+  border: none
+  background-color: transparent
+  cursor: pointer
+  transition: transform 0.3s
+
+  &:hover
+    transform: scale(1.2)
+
+.fa-chevron-right
+  color: #f4a240
+  font-size: 2rem
+
+.modal
+  display: none
+  position: absolute
+  width: 300px
+  height: 200px
+  border-radius: 10px
+  border: 2px solid black
+  box-shadow: 0 0 10px 2px 
+  background-image: url(/img/modal-bg.jpg)
+  background-position: center
+  background-size: cover
+  overflow: hidden
+  z-index: 0
+
+.modal-active
+  display: flex
+
+.modal-shadow
+  background-color: rgba(0, 0, 0, 0.5)
+
+.modal-info
+  position: absolute
+  bottom: 20px
+  text-align: center
+  text-transform: uppercase
+  font-family: 'Lexend', sans-serif
+
+.close-modal
+  display: block
+  position: absolute
+  right: 10px
+  top: 10px
+  padding: 5px 10px
+  border-radius: 5px
+  border: none
+  font-size: 1.2rem
+  background-color: transparent
+  cursor: pointer
+  transition: transform .6s
+
+  &:hover
+    transform: scale(1.2)
+    color: #f4a240
+
+@media (min-width: 320px)
+  .answer-box1, .answer-box2, .answer-box3, .answer-box4
+    h3
+      padding: 0 5% 2% 5%
+  .radio
+    padding: 0 5%
+
+@media (min-width: 768px)
+  .answer-box1, .answer-box2, .answer-box3, .answer-box4
+    width: 700px
+    font-size: 1.4rem
+    h3
+      font-size: 1.9rem
+
+  .arrow-next
+    padding: 8px 15px
+
+  .fa-chevron-right
+    font-size: 2.5rem
+
+  .modal
+    width: 450px
+    height: 300px
+
+  .modal-info
+    bottom: 40px
+    font-size: 1.4rem
+
+  .close-modal
+    padding: 10px 15px
+    font-size: 1.5rem

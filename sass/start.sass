@@ -1,0 +1,178 @@
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+@font-face
+  font-family: HarryPotter
+  src: url(/font/HarryP-MVZ6w.ttf)
+
+body
+  display: flex
+  height: 100vh
+  background-color: #b4a098
+  font-family: 'Henny Penny', cursive
+  font-size: 10px
+
+.container
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  width: 100%
+  height: 100%
+  background-image: url("/img/main-bg.jpg")
+  background-size: cover
+  background-position: center
+  z-index: 0
+
+.hp-logo
+  position: absolute
+  top: 10%
+  text-align: center
+  color: #cc9200
+  font-family: HarryPotter
+  text-shadow: 3px 3px 3px black
+  letter-spacing: 3px
+  h1
+    font-size: 7rem
+    span
+      display: inline-block
+      opacity: 0
+      animation: fadeIn 3s ease-in forwards
+
+      &:nth-child(2)
+        animation-delay: 0.25s
+
+      &:nth-child(3)
+        animation-delay: 0.75s
+
+      &:nth-child(4)
+        animation-delay: 1s
+
+      &:nth-child(5)
+        animation-delay: 1.25s
+
+      &:nth-child(6)
+        animation-delay: 0.25s
+
+      &:nth-child(7)
+        animation-delay: 0.75s
+      &:nth-child(8)
+        animation-delay: 1s
+      &:nth-child(9)
+        animation-delay: 1.25s
+      &:nth-child(10)
+        animation-delay: 1.5s
+      &:nth-child(11)
+        animation-delay: 1.75s
+  h2
+    font-size: 6rem
+    span
+      display: inline-block
+      opacity: 0
+      animation: fadeIn 3s ease-in forwards
+      &:nth-child(1)
+        animation-delay: 1.5s
+      &:nth-child(2)
+        animation-delay: 1.75s
+
+      &:nth-child(3)
+        animation-delay: 2s
+
+      &:nth-child(4)
+        animation-delay: 2.25s
+
+.hero-shadow
+  position: absolute
+  height: 100%
+  width: 100%
+  background-color: rgba(0, 0, 0, 0.5)
+  z-index: -2
+
+.magic-effect
+  position: absolute
+  top: 50%
+  font-size: 1.5rem
+
+  span
+    opacity: 0
+    animation: fadeIn 4s linear 1 normal
+    animation-fill-mode: forwards
+
+    &:nth-child(2)
+      animation-delay: 0.25s
+
+    &:nth-child(3)
+      animation-delay: 0.75s
+
+    &:nth-child(4)
+      animation-delay: 1s
+
+    &:nth-child(5)
+      animation-delay: 1.25s
+
+    &:nth-child(6)
+      animation-delay: 1.75s
+
+    &:nth-child(7)
+      animation-delay: 2s
+
+@keyframes fadeIn
+  to
+    opacity: 1
+
+.bottom
+  position: relative
+  top: 20%
+button
+  display: inline-block
+  padding: 10px 0 10px 0
+  border: none
+  background-color: transparent
+  font-size: 1.2rem
+  text-transform: uppercase
+  font-family: 'Henny Penny', cursive
+  cursor: pointer
+  transition: all 0.3s
+  i
+    text-shadow: 1px 1px 1px black
+    color: #cc9200
+    font-size: 1.3rem
+  
+
+  &:hover
+    transform: scale(1.1)
+    color: #cc9200
+    text-shadow: 3px 3px 3px black
+
+
+.start
+  margin-right: 50px
+  i
+    color: #cc9200
+
+
+
+
+
+
+
+    } else {
+  passInfo.style.display = 'none';
+  password.classList.remove('border-red');
+  passConfirm.classList.remove('border-red');
+  showModal();
+  }
+ }
+ }
+
+ const showModal = () => {
+  const modal = form.querySelector('.modal');
+  const bgShadow = document.querySelector('.bg-shadow');
+  const modalBtn = modal.querySelector('.')
+  modal.style.display='flex';
+  bgShadow.style.display = 'block';
+ }
+
+ form.addEventListener('submit', checkConditions)
