@@ -10,7 +10,6 @@ Live demo: [https://paulaami.github.io/Harry-Potter-Quiz/](https://paulaami.gith
 * [Technologies Used](#technologies-used)
 * [Screenshots](#screenshots)
 * [Setup](#setup)
-* [Further plans](#further-plans)
 
 
 
