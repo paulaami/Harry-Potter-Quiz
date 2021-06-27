@@ -245,6 +245,9 @@ body {
 }
 
 @media (min-width: 768px) {
+  body {
+    background-image: url("../img/main-bg.jpg");
+  }
   .answer-box1, .answer-box2, .answer-box3, .answer-box4 {
     width: 700px;
     font-size: 1.4rem;
