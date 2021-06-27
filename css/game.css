@@ -16,7 +16,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   min-height: 100vh;
-  background-image: url("/img/main-bg-small.jpg");
+  background-image: url("../img/main-bg-small.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -187,7 +187,7 @@ body {
   border: 2px solid black;
   -webkit-box-shadow: 0 0 10px 2px;
           box-shadow: 0 0 10px 2px;
-  background-image: url(/img/modal-bg.jpg);
+  background-image: url(../img/modal-bg.jpg);
   background-position: center;
   background-size: cover;
   overflow: hidden;
